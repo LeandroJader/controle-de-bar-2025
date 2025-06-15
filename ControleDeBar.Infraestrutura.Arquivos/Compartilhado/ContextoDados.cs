@@ -3,6 +3,7 @@ using System.Text.Json;
 using ControleDeBar.Dominio.ModuloMesa;
 using ControleDeBar.Dominio.ModuloGarcon;
 using ControleDeBar.Dominio.ModuloProduto;
+using ControleDeBar.Dominio.ModuloConta;
 
 namespace ControleDeBar.Infraestrura.Arquivos.Compartilhado;
 
@@ -16,11 +17,13 @@ public class ContextoDados
 
     public List<Produto> produtos { get; set; }
 
+    public List <Conta> contas { get; set; }
     public ContextoDados()
     {
         Mesas = new List<Mesa>();
         garcons = new List<Garcom>();
         produtos = new List<Produto>();
+        contas = new List<Conta>();
     }
 
     public ContextoDados(bool carregarDados) : this()
@@ -68,5 +71,6 @@ public class ContextoDados
         Mesas = contextoArmazenado.Mesas;
         garcons = contextoArmazenado.garcons;
         produtos = contextoArmazenado.produtos;
+        contas = contextoArmazenado.contas;
     }
 }
