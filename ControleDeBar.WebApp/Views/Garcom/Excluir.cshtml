@@ -1,6 +1,6 @@
 ﻿@using ControleDeBar.WebApp.Models
 
-@model ExcluirMesaViewModel
+@model ExcluirGarcomViewModel
 
 @{
     Layout = "_Layout";
@@ -15,11 +15,11 @@
                 <h3>Formulário de Exclusão</h3>
 
 
-                <p class="mt-5">Você deseja realmente excluir essa mesa "@Model.Numero"?</p>
+                <p class="mt-5">Você deseja realmente excluir esse Garçom"@Model.Nome"?</p>
 
-                <form action="/mesas/excluir/@Model.Id" method="post">
+                <form action="/garcons/excluir/@Model.Id" method="post">
                     <div class="form-group d-flex align-items-center justify-content-end gap-3">
-                        <a href="/mesas">Voltar para a listagem</a>
+                        <a href="/garcons">Voltar para a listagem</a>
                         <button type="submit" class="btn btn-danger rounded-4 px-5">Confirmar</button>
                     </div>
                 </form>

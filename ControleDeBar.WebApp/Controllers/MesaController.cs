@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ControleDeBar.WebApp.Controllers;
 
 [Route("mesas")]
-public class MesaController : Controller
+public class MesaController: Controller
 {
     private readonly ContextoDados contextoDados;
     private readonly IRepositorioMesa repositorioMesa;
