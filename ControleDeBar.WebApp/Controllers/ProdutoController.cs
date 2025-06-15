@@ -13,7 +13,7 @@ namespace ControleDeBar.WebApp.Controllers
     public class ProdutoController : Controller
     {
         private readonly ContextoDados contextoDados;
-        private readonly IrepositorioProduto repositorioProduto;
+        private readonly IRepositorioProduto repositorioProduto;
         public ProdutoController()
         {
             contextoDados = new ContextoDados(true);

@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace ControleDeBar.Infraestrutura.Arquivos
 {
-    public class RepositorioGarconEmArquivo : RepositorioBaseEmArquivo<Garcom>, IRepositorioGarcon
+    public class RepositorioGarcomEmArquivo : RepositorioBaseEmArquivo<Garcom>, IRepositorioGarcom
     {
-        public RepositorioGarconEmArquivo(ContextoDados contexto) : base(contexto)
+        public RepositorioGarcomEmArquivo(ContextoDados contexto) : base(contexto)
         {
         }
 

@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 
 namespace ControleDeBar.Dominio.ModuloGarcon
 {
-   public interface IRepositorioGarcon : IRepositorio<Garcom>;
+   public interface IRepositorioGarcom : IRepositorio<Garcom>;
         
 }

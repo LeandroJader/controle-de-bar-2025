@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ControleDeBar.Dominio.ModuloProduto
 {
-  public interface IrepositorioProduto : IRepositorio<Produto>;
+  public interface IRepositorioProduto : IRepositorio<Produto>;
     
    
 }

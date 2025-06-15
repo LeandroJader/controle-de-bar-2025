@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ControleDeBar.Infraestrutura.Arquivos.ModuloProduto
 {
-    public class RepositorioProdutoEmArquivo : RepositorioBaseEmArquivo<Produto>, IrepositorioProduto
+    public class RepositorioProdutoEmArquivo : RepositorioBaseEmArquivo<Produto>, IRepositorioProduto
     {
         public RepositorioProdutoEmArquivo(ContextoDados contexto) : base(contexto) { }
         

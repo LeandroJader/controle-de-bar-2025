@@ -13,12 +13,12 @@ namespace ControleDeBar.WebApp.Controllers;
 public class GarcomController : Controller
 {
     private readonly ContextoDados contextoDados;
-    private readonly IRepositorioGarcon repositoriogarcon;
+    private readonly IRepositorioGarcom repositoriogarcon;
 
     public GarcomController()
     {
         contextoDados = new ContextoDados(true);
-        repositoriogarcon = new RepositorioGarconEmArquivo(contextoDados);       
+        repositoriogarcon = new RepositorioGarcomEmArquivo(contextoDados);       
     }
 
     [HttpGet]
