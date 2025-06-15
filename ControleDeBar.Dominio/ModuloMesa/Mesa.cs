@@ -6,7 +6,7 @@ public class Mesa : EntidadeBase<Mesa>
 {
     public int Numero { get; set; }
     public int Capacidade { get; set; }
-
+    public bool EstaOcupada { get; set; }
     public Mesa() { }
 
     public Mesa(int numero, int quantidadeDeAssentos) : this()
@@ -20,5 +20,13 @@ public class Mesa : EntidadeBase<Mesa>
     {
         Numero = registroEditado.Numero;
         Capacidade = registroEditado.Capacidade;
+    }
+    public void Ocupar()
+    {
+        EstaOcupada = true;
+    }
+    public void Desocupar()
+    {
+        EstaOcupada = false;
     }
 }
